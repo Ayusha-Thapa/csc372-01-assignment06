@@ -1,0 +1,96 @@
+/*
+ * Name: Ayusha Thapa
+ * Date: 11.17.2026
+ * CSC 372-01
+ *
+ * Styles the Triviabook page and its forms.
+ */
+
+body {
+    margin: 0;
+    padding: 20px;
+    background-color: #f5f2fa;
+    color: #30283e;
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+}
+
+header {
+    max-width: 750px;
+    margin: 0 auto 25px;
+    text-align: center;
+}
+
+main {
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+h1,
+h2,
+h3 {
+    color: #594078;
+}
+
+section {
+    margin-bottom: 25px;
+    padding: 25px;
+    background-color: white;
+    border: 1px solid #ddd4e8;
+    border-radius: 10px;
+}
+
+form {
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input,
+select,
+textarea {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #a99bb9;
+    border-radius: 5px;
+    background-color: white;
+    color: #30283e;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+
+textarea {
+    min-height: 90px;
+}
+
+button {
+    margin-top: 15px;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 5px;
+    background-color: #68488c;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #50356e;
+}
+
+article {
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid #ddd4e8;
+    border-radius: 5px;
+}
+
+article h3 {
+    margin-top: 0;
+}

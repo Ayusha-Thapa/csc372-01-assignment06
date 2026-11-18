@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<!--
+    Name: Ayusha Thapa
+    Date: 11.17.2026
+    CSC 372-01
+
+    Provides forms for browsing trivia, checking answers,
+    and adding new questions to Triviabook.
+-->
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Triviabook</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Triviabook</h1>
+        <p>Explore topics, test your knowledge, and share a question.</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>Random Question</h2>
+            <button id="random-button" type="button">Get a Question</button>
+            <p id="random-question">Get a question to begin.</p>
+
+            <form id="answer-form">
+                <label for="guess">Your answer:</label>
+                <input id="guess" name="guess" type="text" required>
+                <button type="submit">Check Answer</button>
+            </form>
+
+            <p id="answer-result"></p>
+        </section>
+
+        <section>
+            <h2>Browse Topics</h2>
+            <ul id="topic-list"></ul>
+
+            <form id="search-form">
+                <label for="search-topic">Topic:</label>
+                <input id="search-topic" name="topic" type="text" required>
+
+                <label for="search-difficulty">Difficulty:</label>
+                <select id="search-difficulty" name="difficulty">
+                    <option value="">All difficulties</option>
+                    <option value="easy">Easy</option>
+                    <option value="medium">Medium</option>
+                    <option value="hard">Hard</option>
+                </select>
+
+                <label for="search-limit">Maximum questions:</label>
+                <input id="search-limit" name="limit" type="number" min="1">
+
+                <button type="submit">Search</button>
+            </form>
+
+            <p id="search-message"></p>
+            <div id="question-list"></div>
+        </section>
+
+        <section>
+            <h2>Add a Question</h2>
+
+            <form id="question-form">
+                <label for="new-topic">Topic:</label>
+                <input id="new-topic" name="topic" type="text" required>
+
+                <label for="new-question">Question:</label>
+                <textarea id="new-question" name="question" required></textarea>
+
+                <label for="new-answer">Answer:</label>
+                <input id="new-answer" name="answer" type="text" required>
+
+                <label for="new-difficulty">Difficulty:</label>
+                <select id="new-difficulty" name="difficulty">
+                    <option value="easy">Easy</option>
+                    <option value="medium">Medium</option>
+                    <option value="hard">Hard</option>
+                </select>
+
+                <button type="submit">Add Question</button>
+            </form>
+
+            <p id="add-message"></p>
+        </section>
+    </main>
+</body>
+
+</html>
